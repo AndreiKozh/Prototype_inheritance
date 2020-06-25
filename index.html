@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin: 20px 0 0;
+        }
+
+        h2 {
+            margin: 50px 0 20px;
+        }
+
+        .code {
+            white-space: pre; 
+            font-size: 17px; 
+            letter-spacing: 1px;
+            text-align: left;
+            display: inline-block;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Коженевский Андрей</h1>
+    <h2>Задание №1</h2>
+    <p class = "code">
+        var handbag = {
+            cosmetics: 'pomade',
+            device: 'hairbrush',
+            money: 'hryvnia',
+          
+            put: function(keyPut, valuePut) {
+              handbag[keyPut] = valuePut
+            },
+            
+            del: function(valueDel) {
+              delete handbag[valueDel]
+            },
+            
+        }
+          
+        handbag.del('money')
+          
+        handbag.put('device2', 'mirror')
+          
+    </p>
+    <h2>Задание №3</h2>
+    <p class = "code">
+        function constRuctor() {
+  
+          this.addProperty = function (name, value) {
+            this[name] = value
+          }
+          
+        }
+          
+        var example = new constRuctor
+          
+        example.addProperty('name1', 'value1')
+          
+        example.addProperty('name2', 'value2')
+          
+    </p>
+</body>
+<script>
+    var numbers = [ 254, 115, 78, 25, 91, 45, 37 ]
+
+    for (var i = 0; i < 7; i++) {
+      
+      if (numbers[i]>50) { 
+        console.log (numbers[i])
+        }
+    
+    }
+</script>
+</html>
